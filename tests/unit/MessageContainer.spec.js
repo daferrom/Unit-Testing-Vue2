@@ -5,7 +5,7 @@ describe('MessageContainer', () => {
   it('Wraps MessageDisplay component', () => {
     const wrapper = mount(MessageContainer, {
       stubs: {
-        MessageDisplay: '<p v-else data-testid="message">{{ message.text }}</p>'
+        MessageDisplay: '<p v-else data-testid="message">Hello from the db!</p>'
       }
     })
     const message = wrapper.find('[data-testid="message"]').element.textContent
